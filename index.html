@@ -3,73 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Jaime Ramírez</title>
+    <title>Jaime Ramírez - Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sección de perfil con foto -->
+        <!-- Header con foto y botón -->
         <header>
             <div class="profile">
-                <img src="media/foto-perfil.jpg" alt="Foto de Jaime Ramírez" class="profile-img">
-                <h1>Jaime Federico Ramírez Parra</h1>
-                <p>Ingeniero en Telecomunicaciones</p>
+                <img src="media/foto-perfil.jpg" alt="Jaime Ramírez" class="profile-img">
+                <h1>Jaime Ramírez <span>Ing. Telecomunicaciones</span></h1>
+                <div class="social">
+                    <a href="mailto:jfrp2004n@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+584244079168"><i class="fas fa-phone"></i></a>
+                </div>
+                <a href="media/Curriculo_Jaime_Ramirez.pdf" download class="download-btn">
+                    <i class="fas fa-download"></i> Descargar CV
+                </a>
             </div>
-            <!-- Botón de descarga -->
-            <a href="media/Curriculo_Jaime_Ramirez.pdf" download class="download-btn">Descargar CV (PDF)</a>
         </header>
 
-        <!-- Sección de datos personales -->
-        <section class="section">
-            <h2>Datos Personales</h2>
+        <!-- Sección de Datos Personales -->
+        <section class="card">
+            <h2><i class="fas fa-user"></i> Datos Personales</h2>
             <ul>
-                <li><strong>Cédula:</strong> V-27.563.284</li>
-                <li><strong>Fecha de Nacimiento:</strong> 17/06/2000</li>
-                <li><strong>Email:</strong> jfrp2004n@gmail.com</li>
-                <li><strong>Teléfono:</strong> (0426) 4079168 / (0424) 3591910</li>
-                <li><strong>Dirección:</strong> Urbanización Horizonte, Cabudare, Lara.</li>
+                <li><i class="fas fa-id-card"></i> <strong>Cédula:</strong> V-27.563.284</li>
+                <li><i class="fas fa-birthday-cake"></i> <strong>Fecha Nacimiento:</strong> 17/06/2000</li>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Cabudare, Lara, Venezuela</li>
+                <li><i class="fas fa-phone"></i> <strong>Teléfono:</strong> (0426) 4079168 / (0424) 3591910</li>
+                <li><i class="fas fa-envelope"></i> <strong>Email:</strong> jfrp2004n@gmail.com</li>
             </ul>
         </section>
 
-        <!-- Sección de estudios -->
-        <section class="section">
-            <h2>Estudios</h2>
-            <ul>
-                <li><strong>Bachiller en Ciencias</strong> - Colegio Santa Lucía (2012-2017)</li>
-                <li><strong>Ingeniería en Telecomunicaciones</strong> - Universidad Fermín Toro (9no semestre)</li>
-            </ul>
+        <!-- Sección de Estudios -->
+        <section class="card">
+            <h2><i class="fas fa-graduation-cap"></i> Estudios</h2>
+            <div class="timeline">
+                <div class="item">
+                    <h3>Bachiller en Ciencias</h3>
+                    <p>Colegio Santa Lucía (2012-2017)</p>
+                </div>
+                <div class="item">
+                    <h3>Ingeniería en Telecomunicaciones</h3>
+                    <p>Universidad Fermín Toro (9no semestre)</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Sección de experiencia laboral -->
-        <section class="section">
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li><strong>Atención al cliente</strong> - Súper Feria Campos de Venezuela (2019-2021)</li>
-                <li><strong>Pasante en Telecomunicaciones</strong> - Marfix C.A. (4 meses)</li>
-                <li><strong>Trabajo independiente</strong> - Reparación de equipos electrónicos (2021-actualidad)</li>
-            </ul>
-        </section>
-
-        <!-- Sección de habilidades -->
-        <section class="section">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <div>
-                    <h3>Técnicas</h3>
+        <!-- Sección de Experiencia Laboral -->
+        <section class="card">
+            <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="item">
+                    <h3>Atención al Cliente</h3>
+                    <p>Súper Feria Campos de Venezuela (2019-2021)</p>
+                </div>
+                <div class="item">
+                    <h3>Pasante en Telecomunicaciones</h3>
+                    <p>Marfix C.A. (4 meses)</p>
                     <ul>
-                        <li>Reparación de celulares y computadoras</li>
-                        <li>Redes FTTH y configuración MikroTik</li>
+                        <li>Tecnología, Redes, Soporte Técnico</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Software</h3>
+                <div class="item">
+                    <h3>Trabajo Independiente</h3>
+                    <p>2021 - Actualidad</p>
                     <ul>
-                        <li>HTML, C++, Java (básico)</li>
-                        <li>Excel, PowerPoint</li>
+                        <li>Reparación de celulares y computadoras</li>
+                        <li>Venta de repuestos</li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <!-- Sección de Habilidades -->
+        <section class="card">
+            <h2><i class="fas fa-code"></i> Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Técnicas</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Reparación de hardware</li>
+                        <li><i class="fas fa-check"></i> Redes FTTH</li>
+                        <li><i class="fas fa-check"></i> Configuración MikroTik</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Software</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> HTML, C++, Java</li>
+                        <li><i class="fas fa-check"></i> Excel, PowerPoint</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section class="card">
+            <h2><i class="fas fa-project-diagram"></i> Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project">
+                    <h3><i class="fas fa-mobile-alt"></i> Reparación de Celulares</h3>
+                    <p>Solución de fallas en placas y software.</p>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project">
+                    <h3><i class="fas fa-network-wired"></i> Redes FTTH</h3>
+                    <p>Instalación de fibra óptica residencial.</p>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project">
+                    <h3><i class="fas fa-laptop"></i> Mantenimiento de PCs</h3>
+                    <p>Limpieza y optimización de equipos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>© 2024 Jaime Ramírez. Todos los derechos reservados.</p>
+        </footer>
     </div>
 </body>
 </html>
