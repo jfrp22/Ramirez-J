@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0078d7;
+}
+
+h1 {
+    color: #0078d7;
+    margin: 10px 0 5px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0078d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #005bb5;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 5px;
+    color: #0078d7;
+}
+
+.skills {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+    }
+}
