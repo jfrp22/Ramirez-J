@@ -253,6 +253,23 @@ h1 span {
 .project-link i {
     margin-left: 5px;
 }
+
+.tech-tags {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #e1f5fe;
+    color: #0078d7;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
     text-align: center;
