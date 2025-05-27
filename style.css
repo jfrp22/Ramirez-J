@@ -208,8 +208,9 @@ h1 span {
 .project {
     background: #f9f9f9;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 0.3s;
+    overflow: hidden; /* Para que la imagen no sobresalga */
 }
 
 .project:hover {
@@ -227,10 +228,13 @@ h1 span {
 /* Estilos para imágenes de proyectos */
 .project img {
     width: 100%;
+    height: auto; /* Altura automática según proporción */
+    max-height: 200px; /* Altura máxima */
+    /*height: 200px; /* Altura fija (ajusta este valor según necesites) */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
     border-radius: 8px;
-    margin-bottom: 10px;
-    height: 180px;
-    object-fit: cover;
+    margin-bottom: 15px;
+    border: 1px solid #eee; /* Opcional: borde sutil */
 }
 
 /* Botones de proyectos */
@@ -294,5 +298,10 @@ footer {
 
     .skills-grid, .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .project img {
+        height: 150px; /* Altura más pequeña en móviles */
     }
 }
