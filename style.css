@@ -18,6 +18,25 @@ body {
     color: var(--secondary);
 }
 
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+
+body.dark-mode .card,
+body.dark-mode .project,
+body.dark-mode .skill-category {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .project h3,
+body.dark-mode .skill-category h3 {
+    color: #4dabf7;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
